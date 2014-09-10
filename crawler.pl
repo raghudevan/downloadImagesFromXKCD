@@ -28,6 +28,9 @@ if($outPath eq "def"){
 	$outPath = $defoutPath;
 }
 
+
+mkdir($outPath) or die "Invalid directory : $outPath\n";
+
 my $basePath = "http://xkcd.com/";
 my $comic = "comics/";
 my $png = "\.";
